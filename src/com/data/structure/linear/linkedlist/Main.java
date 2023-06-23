@@ -4,7 +4,11 @@ import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
-        demoBuiltInLinkedList();
+//        demoBuiltInLinkedList();
+        var list = new com.data.structure.linear.linkedlist.LinkedList();
+        list.addLast(10);
+        list.addLast(20);
+        list.addLast(30);
     }
     public static void demoBuiltInLinkedList() {
         LinkedList list = new LinkedList();
