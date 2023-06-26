@@ -13,11 +13,25 @@ public class LinkedList {
     private Node last;
     public void addLast(int item) {
         var node = new Node(item);
-        if (first == null)
+        if (isEmpty())
             first = last = node;
         else {
             last.next = node;
             last = node;
         }
+    }
+
+    public void addFirst(int item) {
+        var node = new Node(item);
+        if (isEmpty())
+            first = last = node;
+        else {
+            last.next = node;
+            last = node;
+        }
+    }
+
+    private boolean isEmpty() {
+        return first == null;
     }
 }

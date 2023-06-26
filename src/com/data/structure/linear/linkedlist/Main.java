@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
 //        demoBuiltInLinkedList();
         var list = new com.data.structure.linear.linkedlist.LinkedList();
+        list.addFirst(5);
         list.addLast(10);
         list.addLast(20);
         list.addLast(30);
