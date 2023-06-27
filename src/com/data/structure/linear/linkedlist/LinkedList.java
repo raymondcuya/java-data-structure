@@ -20,7 +20,6 @@ public class LinkedList {
             last = node;
         }
     }
-
     public void addFirst(int item) {
         var node = new Node(item);
         if (isEmpty())
@@ -30,7 +29,16 @@ public class LinkedList {
             last = node;
         }
     }
-
+    public int indexOf(int item) {
+        int index = 0;
+        var current = first;
+        while (current != null) {
+            if (current.value == item) return index;
+            current = current.next;
+            index++;
+        }
+        return -1;
+    }
     private boolean isEmpty() {
         return first == null;
     }

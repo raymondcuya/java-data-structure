@@ -10,6 +10,8 @@ public class Main {
         list.addLast(10);
         list.addLast(20);
         list.addLast(30);
+        var indexOf20 = list.indexOf(20);
+        System.out.println(indexOf20);
     }
     public static void demoBuiltInLinkedList() {
         LinkedList list = new LinkedList();
