@@ -11,7 +11,9 @@ public class Main {
         list.addLast(20);
         list.addLast(30);
         var indexOf20 = list.indexOf(20);
+        var contains40 = list.contains(20);
         System.out.println(indexOf20);
+        System.out.println(contains40);
     }
     public static void demoBuiltInLinkedList() {
         LinkedList list = new LinkedList();

@@ -1,5 +1,7 @@
 package com.data.structure.linear.linkedlist;
 
+import java.util.NoSuchElementException;
+
 public class LinkedList {
     private class Node {
         private int value;
@@ -38,6 +40,9 @@ public class LinkedList {
             index++;
         }
         return -1;
+    }
+    public boolean contains(int item) {
+        return indexOf(item) != -1;
     }
     private boolean isEmpty() {
         return first == null;
