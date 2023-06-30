@@ -12,6 +12,7 @@ public class Main {
         list.addLast(30);
         var indexOf20 = list.indexOf(20);
         var contains40 = list.contains(20);
+        list.removeFirst();
         System.out.println(indexOf20);
         System.out.println(contains40);
     }
