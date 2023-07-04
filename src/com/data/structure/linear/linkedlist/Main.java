@@ -6,16 +6,23 @@ public class Main {
     public static void main(String[] args) {
 //        demoBuiltInLinkedList();
         var list = new com.data.structure.linear.linkedlist.LinkedList();
+        System.out.println("size: " + list.size());
         list.addFirst(5);
+        System.out.println("size: " + list.size());
         list.addLast(10);
+        System.out.println("size: " + list.size());
         list.addLast(20);
+        System.out.println("size: " + list.size());
         list.addLast(30);
+        System.out.println("size: " + list.size());
         var indexOf20 = list.indexOf(20);
         var contains40 = list.contains(20);
         list.removeFirst();
+        System.out.println("size: " + list.size());
         list.removeLast();
-        System.out.println(indexOf20);
-        System.out.println(contains40);
+        System.out.println("size: " + list.size());
+        System.out.println("indexOf 20: " + indexOf20);
+        System.out.println("contains 40: " + contains40);
     }
     public static void demoBuiltInLinkedList() {
         LinkedList list = new LinkedList();
