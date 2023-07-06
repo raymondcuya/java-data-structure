@@ -80,7 +80,17 @@ public class LinkedList {
     public int size() {
         return size;
     }
+    public int[] toArray() {
+        int[] array = new int[size];
+        var current = first;
+        var index = 0;
+        while (current != null) {
+            array[index++] = current.value;
+            current = current.next;
+        }
 
+        return array;
+    }
     private Node getPrevious(Node node) {
         var current = first;
         while (current != null) {

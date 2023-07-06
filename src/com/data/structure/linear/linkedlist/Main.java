@@ -1,11 +1,22 @@
 package com.data.structure.linear.linkedlist;
 
-import java.util.LinkedList;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
 //        demoBuiltInLinkedList();
-        var list = new com.data.structure.linear.linkedlist.LinkedList();
+//        demoLinkedList();
+        LinkedList list = new LinkedList();
+        list.addLast(10);
+        list.addLast(20);
+        list.addLast(30);
+
+        var array = list.toArray();
+        System.out.println(Arrays.toString(array));
+    }
+
+    private static void demoLinkedList() {
+        var list = new LinkedList();
         System.out.println("size: " + list.size());
         list.addFirst(5);
         System.out.println("size: " + list.size());
@@ -24,6 +35,7 @@ public class Main {
         System.out.println("indexOf 20: " + indexOf20);
         System.out.println("contains 40: " + contains40);
     }
+
     public static void demoBuiltInLinkedList() {
         LinkedList list = new LinkedList();
         list.addLast(10);
