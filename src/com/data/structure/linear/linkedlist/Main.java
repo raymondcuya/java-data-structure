@@ -14,6 +14,7 @@ public class Main {
         list.addLast(40);
         list.addLast(50);
         System.out.println(list.getKthFromTheEnd(1));
+        list.printMiddle();
     }
 
     private static void demoToArrayAndReverse() {
